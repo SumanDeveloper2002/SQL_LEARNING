@@ -7,4 +7,4 @@
 <li>google </li>
 <li>w3schools</li>
 
-![](https://drive.google.com/file/d/1aXR1WbBihT0ZXWY-uH6gHJTrp5jrOM1d/view?usp=drive_link)
+![tap](![](https://drive.google.com/file/d/1aXR1WbBihT0ZXWY-uH6gHJTrp5jrOM1d/view?usp=drive_link))Welcome to the SQL_LEARNING wiki!
