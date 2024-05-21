@@ -1,0 +1,33 @@
+create database if not exists collages;
+use collages;
+create table students(
+	Rollno int primary key,
+	name varchar(50) not null
+);
+
+INSERT INTO students
+(Rollno,name)
+VALUES
+(101,"Vijay"),
+(102,"Rashmi"),
+(103,"sanjay");
+INSERT INTO students VALUES(110,"Nidha");
+
+select * from students;
+
+
+use collages;  
+CREATE TABLE emp(
+id int,
+salary int DEFAULT 25000
+);
+INSERT INTO  emp(id) values (102);
+INSERT INTO  emp values (102,30000);
+INSERT INTO  emp values (null,40000);
+INSERT INTO  emp(id) values (104);
+
+SELECT *FROM emp  students;
+
+
+   
+   
