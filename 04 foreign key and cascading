@@ -1,0 +1,38 @@
+CREATE DATABASE aot;
+USE aot;
+CREATE TABLE dept(
+id INT PRIMARY KEY,
+subject VARCHAR(50)
+);
+CREATE TABLE teachers(
+id INT PRIMARY KEY,
+name VARCHAR(50),
+dept_id INT,
+FOREIGN KEY (dept_id) REFERENCES dept(id)
+ON DELETE CASCADE
+ON UPDATE CASCADE
+);
+
+INSERT INTO dept
+(id,subject)
+VALUE
+(101,"CSE"),
+(102,"ECE"),
+(103,"EEE");
+
+UPDATE dept
+SET id=111
+WHERE id=103;
+
+INSERT INTO teachers
+(id,name,dept_id)
+VALUES
+(1001, "Adam", 101),
+(1002, "Bob", 103),
+(1003, "Casey", 102),
+(1004, "Daniel", 102),
+(1005, "Echiey", 103);
+
+
+SELECT * FROM dept;
+SELECT * FROM teachers;
