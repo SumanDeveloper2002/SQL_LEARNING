@@ -1,0 +1,53 @@
+USE collage;
+CREATE TABLE copy_student(
+	rollno int PRIMARY KEY,
+    name VARCHAR(50) NOT NULL,
+    marks INT NOT NULL,
+    grade VARCHAR(1),
+    city VARCHAR(50)
+);
+
+INSERT INTO copy_student
+(rollno, name, marks, grade, city)
+VALUES
+(101,"Anil",78,"C","Pune"),
+(102,"bhumika",93,"A","Mumbai"),
+(103,"Chetan",85,"B","Mumbai"),
+(104,"Drub",96,"A","Delhi"),
+(105,"Emanul",12,"F","Delhi"),
+(106,"Farah",82,"B","Delhi");
+ 
+ 
+ SELECT * FROM copy_student;
+ show tables;
+ 
+ALTER TABLE copy_student
+ADD COLUMN age Int NOT NULL DEFAULT 18;
+
+ALTER TABLE copy_student
+MODIFY age VARCHAR(2);
+
+ALTER TABLE copy_student
+CHANGE age stuAge INT;
+
+SET SQL_SAFE_UPDATES=0;
+UPDATE copy_student
+SET stuAge=100
+WHERE marks=82;
+
+ALTER TABLE copy_student
+RENAME To stu;
+
+SELECT * FROM stu;
+
+ALTER TABLE stu
+DROP COLUMN stuAge;
+
+TRUNCATE TABLE copy_student;
+
+ALTER TABLE stu
+RENAME TO copy_student;
+
+DROP TABLE copy_student;
+
+
