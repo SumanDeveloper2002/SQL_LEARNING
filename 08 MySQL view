@@ -1,0 +1,11 @@
+//a view is a virtual table used on the result set of an sql set of statement.
+
+CREATE VIEW view1 AS
+SELECT name,marks 
+FROM newstudent;
+
+
+//we can perfom general queries over  view
+SELECT *FROM view1;
+SELECT* FROM view1 where marks%2=0;
+DROP VIEW view1;
