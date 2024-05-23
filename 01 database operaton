@@ -1,10 +1,10 @@
 CREATE DATABASE school;
-create database company;
+create database IF NOT EXISTS company;
 CREATE DATABASE home;
 create database collage;
 
 drop database company;
-drop database school;
+drop database IF EXISTS school;
 DROP DATABASE home;
 
 USE collage;
