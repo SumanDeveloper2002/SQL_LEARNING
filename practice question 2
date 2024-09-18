@@ -22,4 +22,4 @@ VALUES
 
 SELECT mode, count(customer)
 FROM payment
-group by mode;
+group by mode
