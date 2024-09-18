@@ -6,6 +6,7 @@ customer varchar(50),
 mode VARCHAR(50) NOT NULL,
 city VARCHAR(50) NOT NULL
 );
+
 INSERT INTO payment
 (customer_id, customer, mode, city)
 VALUES
